@@ -1,16 +1,13 @@
 [project]
-name = "my-geo-project"
+name = "seismic-frequency-filter"
 version = "0.1.0"
-description = "geophysics projects library"
+description = "Interactive seismic frequency filtering tool"
 authors = [
     {name = "Fyodor Knyazkov"}
 ]
 license = "MIT"
-requires-python = ">=3.13"
-dependencies = [
-    "numpy (>=2.5.3,<3.0.0)"
-]
-
+requires-python = ">=3.13,<3.15"
+dependencies = ["pyside6 (>=6.11.2,<7.0.0)", "pyqtgraph (>=0.14.0,<0.15.0)", "numpy (>=2.5.3,<3.0.0)", "scipy (>=1.18.1,<2.0.0)", "segyio (>=1.9.14,<2.0.0)"]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
